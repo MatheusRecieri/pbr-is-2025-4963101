@@ -23,6 +23,16 @@
             background: black;
         }
 
+        img {
+            height: 5rem;
+           width: 12rem; 
+        }
+
+        .preco {
+            font-size: 1.5rem;
+            font-weight: bolder;
+            text-align: right;
+        }
     </style>
 </head> 
 
@@ -31,14 +41,14 @@
 
         <script>
 
-            let produto = prompt("informe o nome do produto");
+           var produto = prompt("Informe o nome do produto:");
+           var descricao = prompt("Informe a descrição do produto:");
+           var preco = prompt("Informe o preço do produto:");
 
-            
-            alert("Produto:" + produto);
-            
-            console.log("Produto" + produto);
-            
-            document.write(`Produto: ${produto}`);
+           document.write("<img src='BOAS-PRATICAS-EM-SUPERMERCADOS-1140x757.jpg'>");
+            document.write(`<h1 class="titulo"> ${produto} </h1>`);
+            document.write(`<article class="descricao"> ${descricao} </article>`);
+            document.write(`<aside class="preco"> R$ ${preco} </aside>`);
 
         </script>
 
